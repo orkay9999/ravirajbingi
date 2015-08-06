@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Hol_req_from: MyString
+  Hol_from: 2015-08-01
+  Hol_to: 2015-08-01
+  Hol_taken: 1
+  Hol_bal: 1
+  Hol_approved_by: MyString
+
+two:
+  Hol_req_from: MyString
+  Hol_from: 2015-08-01
+  Hol_to: 2015-08-01
+  Hol_taken: 1
+  Hol_bal: 1
+  Hol_approved_by: MyString

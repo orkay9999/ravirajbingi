@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hol req from:</strong>
+  <%= @hr_table.Hol_req_from %>
+</p>
+
+<p>
+  <strong>Hol from:</strong>
+  <%= @hr_table.Hol_from %>
+</p>
+
+<p>
+  <strong>Hol to:</strong>
+  <%= @hr_table.Hol_to %>
+</p>
+
+<p>
+  <strong>Hol taken:</strong>
+  <%= @hr_table.Hol_taken %>
+</p>
+
+<p>
+  <strong>Hol bal:</strong>
+  <%= @hr_table.Hol_bal %>
+</p>
+
+<p>
+  <strong>Hol approved by:</strong>
+  <%= @hr_table.Hol_approved_by %>
+</p>
+
+<%= link_to 'Edit', edit_hr_table_path(@hr_table) %> |
+<%= link_to 'Back', hr_tables_path %>

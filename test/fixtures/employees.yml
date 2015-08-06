@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emp_name: MyString
+  address: MyString
+  DOB: 2015-08-01
+  mobile: MyString
+  email: MyString
+  Designation: MyString
+  Dept: MyString
+  salary: 9.99
+  Hol_taken: 1
+  Hol_bal: 1
+
+two:
+  emp_name: MyString
+  address: MyString
+  DOB: 2015-08-01
+  mobile: MyString
+  email: MyString
+  Designation: MyString
+  Dept: MyString
+  salary: 9.99
+  Hol_taken: 1
+  Hol_bal: 1
