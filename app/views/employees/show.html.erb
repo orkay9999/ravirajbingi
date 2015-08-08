@@ -1,54 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Emp name:</strong>
-  <%= @employee.emp_name %>
-</p>
+<table class="table table-hover">
+   	<tbody>
 
-<p>
-  <strong>Address:</strong>
-  <%= @employee.address %>
-</p>
-
-<p>
-  <strong>Dob:</strong>
-  <%= @employee.DOB %>
-</p>
-
-<p>
-  <strong>Mobile:</strong>
-  <%= @employee.mobile %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @employee.email %>
-</p>
-
-<p>
-  <strong>Designation:</strong>
-  <%= @employee.Designation %>
-</p>
-
-<p>
-  <strong>Dept:</strong>
-  <%= @employee.Dept %>
-</p>
-
-<p>
-  <strong>Salary:</strong>
-  <%= @employee.salary %>
-</p>
-
-<p>
-  <strong>Hol taken:</strong>
-  <%= @employee.Hol_taken %>
-</p>
-
-<p>
-  <strong>Hol bal:</strong>
-  <%= @employee.Hol_bal %>
-</p>
+      <tr>
+        <th>Emp name:</th>
+        <td><%= @employee.emp_name %></td>
+      </tr>
+      
+      <tr>
+        <th>Address:</th>
+        <td><%= @employee.address %></td>
+      </tr>
+      
+      <tr>
+        <th>Dob:</th>
+        <td><%= @employee.DOB %></td>
+      </tr>
+      
+      <tr>
+        <th>Mobile:</th>
+        <td><%= @employee.mobile %></td>
+      </tr>
+      
+      <tr>
+        <th>Email:</th>
+        <td><%= @employee.email %></td>
+      </tr>
+      
+      <tr>
+        <th>Designation:</th>
+        <td><%= @employee.Designation %></td>
+      </tr>
+      
+      <tr>
+        <th>Dept:</th>
+        <td><%= @employee.Dept %></td>
+      </tr>
+      
+      <tr>
+        <th>Salary:</th>
+        <td><%= @employee.salary %></td>
+      </tr>
+      
+      <tr>
+        <th>Hol taken:</th>
+        <td><%= @employee.Hol_taken %></td>
+      </tr>
+      
+      <tr>
+        <th>Hol bal:</th>
+        <td><%= @employee.Hol_bal %></td>
+      </tr>
 
 <%= link_to 'Edit', edit_employee_path(@employee) %> |
 <%= link_to 'Back', employees_path %>

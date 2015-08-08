@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Employees</h1>
+<h1>Listing Employees Data</h1>
 <%= form_tag employees_path, :method => 'get' do %>
     <%= text_field_tag :search, params[:search] %>
     <%= submit_tag "Search" %>
 <% end %>
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
       <th>Emp name</th>

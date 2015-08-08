@@ -1,34 +1,37 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Hol req from:</strong>
-  <%= @hr_table.Hol_req_from %>
-</p>
+<table class="table table-hover">
+   	<tbody>
 
-<p>
-  <strong>Hol from:</strong>
-  <%= @hr_table.Hol_from %>
-</p>
-
-<p>
-  <strong>Hol to:</strong>
-  <%= @hr_table.Hol_to %>
-</p>
-
-<p>
-  <strong>Hol taken:</strong>
-  <%= @hr_table.Hol_taken %>
-</p>
-
-<p>
-  <strong>Hol bal:</strong>
-  <%= @hr_table.Hol_bal %>
-</p>
-
-<p>
-  <strong>Hol approved by:</strong>
-  <%= @hr_table.Hol_approved_by %>
-</p>
+        <tr>
+          <th>Holiday request from:</th>
+          <td><%= @hr_table.Hol_req_from %></td>
+        </tr>
+        
+        <tr>
+          <th>Holidays from:</th>
+          <td><%= @hr_table.Hol_from %></td>
+        </tr>
+        
+        <tr>
+          <th>Holidays to:</th>
+          <td><%= @hr_table.Hol_to %></td>
+        </tr>
+        
+        <tr>
+          <th>Holidays taken:</th>
+          <td><%= @hr_table.Hol_taken %></td>
+        </tr>
+        
+        <tr>
+          <th>Holidays balance:</th>
+          <td><%= @hr_table.Hol_bal %></td>
+        </tr>
+        
+        <tr>
+          <th>Holidays approved by:</th>
+          <td><%= @hr_table.Hol_approved_by %></td>
+        </tr>
 
 <%= link_to 'Edit', edit_hr_table_path(@hr_table) %> |
 <%= link_to 'Back', hr_tables_path %>

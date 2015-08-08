@@ -1,3 +1,11 @@
+
+<p>
+  <h3><%= @employee.emp_name %></h3>
+</p>
+
+<table class="table table-hover">
+	<tbody>
+	  
 <%= form_for(@employee) do |f| %>
   <% if @employee.errors.any? %>
     <div id="error_explanation">
@@ -11,46 +19,50 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :emp_name %><br>
-    <%= f.text_field :emp_name %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br>
-    <%= f.text_field :address %>
-  </div>
-  <div class="field">
-    <%= f.label :DOB %><br>
-    <%= f.date_select :DOB %>
-  </div>
-  <div class="field">
-    <%= f.label :mobile %><br>
-    <%= f.text_field :mobile %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :Designation %><br>
-    <%= f.text_field :Designation %>
-  </div>
-  <div class="field">
-    <%= f.label :Dept %><br>
-    <%= f.text_field :Dept %>
-  </div>
-  <div class="field">
-    <%= f.label :salary %><br>
-    <%= f.text_field :salary %>
-  </div>
-  <div class="field">
-    <%= f.label :Hol_taken %><br>
-    <%= f.number_field :Hol_taken %>
-  </div>
-  <div class="field">
-    <%= f.label :Hol_bal %><br>
-    <%= f.number_field :Hol_bal %>
-  </div>
+  
+  <tr>
+    <th><%= f.label :emp_name %></th>
+    <td><%= f.text_field :emp_name %></td>
+  </tr>  
+  <tr>
+    <th><%= f.label :address %></th>
+    <td><%= f.text_field :address %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :DOB %><br>
+    <td><%= f.date_select :DOB %></td>
+  </tr>
+  <trh>
+    <th><%= f.label :mobile %></th>
+    <td><%= f.text_field :mobile %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :email %></th>
+    <td><%= f.text_field :email %></td>
+  </tr>
+  <tr> 
+    <th><%= f.label :Designation %></th>
+    <td><%= f.text_field :Designation %></td>
+  </tr> 
+  <tr>
+    <th><%= f.label :Dept %></th>
+    <td><%= f.text_field :Dept %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :salary %></th>
+    <td><%= f.text_field :salary %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :Hol_taken %></th>
+    <td><%= f.number_field :Hol_taken %></td>
+  </tr>
+  <tr>
+    <th><%= f.label :Hol_bal %></th>
+    <td><%= f.number_field :Hol_bal %></td>
+  </tr>
+  
+  	</tbody>
+</table>
   <div class="actions">
     <%= f.submit %>
   </div>
