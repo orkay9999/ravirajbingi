@@ -3,7 +3,6 @@ Rails.application.routes.draw do
 
   devise_for :users, controllers: { registrations: "registrations" }
   root 'pages#home'
-  #root 'home#index'
   
   get "employees" => "employees#index"
   get "hr_tables" => "hr_tables#index"
